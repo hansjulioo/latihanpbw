@@ -1,3 +1,17 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['simple_login'])){
+        header("Location: index.php");
+        exit();
+    }
+     
+/*** you can  write your protected content here ***/
+ 
+?>
+<h1 align="center">Welcome, <?php echo $_SESSION['simple_login']; ?></h1>
+<p align="center"><a href="index.html">Logout</a></p>
+
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -130,7 +144,7 @@
                             <li><a href="#test">Apa Kata Mereka ?</a></li>
                             <li><a href="#lulusan">Profile Lulusan</a></li>
                             <li><a href="#mu-contact">Contact</a></li>
-                            <li><a href="login.php">login</a></li>
+                            
                         </ul>
                     </div><!-- /.navbar-collapse --> 
             </nav>
