@@ -76,10 +76,10 @@
                             <div class="col-md-6">
                                 <div class="navbar-socail text-right sm-text-center">
                                     <ul class="list-inline">
-                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://id.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.gmail.com"><i class="fa fa-google-plus"></i></a></li>
                                         <li><a href=""><i class="fa fa-behance"></i></a></li>
                                         <li><a href=""><i class="fa fa-dribbble"></i></a></li>
                                     </ul>
@@ -129,7 +129,7 @@
                             <li><a href="#business">Fasilitas</a></li>
                             <li><a href="#test">Apa Kata Mereka ?</a></li>
                             <li><a href="#lulusan">Profile Lulusan</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#mu-contact">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse --> 
             </nav>
@@ -493,7 +493,79 @@
             </section>
             <!-- End off test section -->
 
+            <!--contact us-->
+              <section id="mu-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-contact-area">
 
+            <div class="mu-title">
+              <span class="mu-subtitle">Get In Touch</span>
+              <h2>Contact Us</h2>
+            </div>
+
+            <div class="mu-contact-content">
+              <div class="row">
+
+                <div class="col-md-6">
+                  <div class="mu-contact-left">
+                    <!-- Email message div -->
+                    <div id="form-messages"></div>
+                    <!-- Start contact form -->
+                    <form id="ajax-contact" method="post" action="contact.php" target="_blank" class="mu-contact-form">
+                      <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                      </div>                      
+                      <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message</label>                        
+                        <textarea class="form-control" id="message" name="message"  cols="30" rows="10" placeholder="Type Your Message" required></textarea>
+                      </div>                      
+                      <button type="submit" class="mu-send-btn">Send Message</button>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="mu-contact-right">
+                    <div class="mu-contact-widget">
+                      <h3>Office Address</h3>
+                      <p>Jalan Raya ITS, Keputih, Sukolilo, Keputih, Sukolilo, Kota SBY, Jawa Timur 60111</p>
+                      <address>
+                        <p><i class="fa fa-phone"></i> (031) 5994251</p>
+                        <p><i class="fa fa-envelope-o"></i>teknologi.informasi@its.ac.id</p>
+                        <p><i class="fa fa-map-marker"></i>Surabaya, Jawa Timur, Indonesia</p>
+                      </address>
+                    </div>
+                    <div class="mu-contact-widget">
+                      <h3>Open Hours</h3>                      
+                      <address>
+                        <p><span>Senin - Jumat</span> 08.00-16.00</p>
+                        <p><span>Sabtu</span> Libur</p>
+                        <p><span>Minggu</span> Libur</p>
+                      </address>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+            <!--end-->
             <footer id="contact" class="footer action-lage bg-black p-top-80">
                 <!--<div class="action-lage"></div>-->
                 <div class="container">
