@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(!isset($_SESSION['simple_login'])){
-        header("Location: index.php");
+        header("Location: home.php");
         exit();
     }
      
@@ -9,8 +9,7 @@
  
 ?>
 <h1 align="center">Welcome, <?php echo $_SESSION['simple_login']; ?></h1>
-<p align="center"><a href="index.html">Logout</a></p>
-
+<p align="center"><a href="logout.php">Logout</a></p>
 
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
@@ -90,10 +89,10 @@
                             <div class="col-md-6">
                                 <div class="navbar-socail text-right sm-text-center">
                                     <ul class="list-inline">
-                                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="https://id.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://www.gmail.com"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
                                         <li><a href=""><i class="fa fa-behance"></i></a></li>
                                         <li><a href=""><i class="fa fa-dribbble"></i></a></li>
                                     </ul>
@@ -144,11 +143,11 @@
                             <li><a href="#test">Apa Kata Mereka ?</a></li>
                             <li><a href="#lulusan">Profile Lulusan</a></li>
                             <li><a href="#mu-contact">Contact</a></li>
-                            
+                           
                         </ul>
                     </div><!-- /.navbar-collapse --> 
             </nav>
-    
+
             <!--Home Sections-->
             <section id="home" class="home bg-black fix">
                 <div class="overlay"></div>
@@ -507,9 +506,8 @@
                 </div>
             </section>
             <!-- End off test section -->
-
-            <!--contact us-->
-              <section id="mu-contact">
+            
+            <section id="mu-contact">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -528,7 +526,7 @@
                     <!-- Email message div -->
                     <div id="form-messages"></div>
                     <!-- Start contact form -->
-                    <form id="ajax-contact" method="post" action="contact.php" target="_blank" class="mu-contact-form">
+                    <form id="ajax-contact" method="post" action="contact.php" class="mu-contact-form">
                       <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
@@ -580,7 +578,6 @@
     </div>
   </section>
 
-            <!--end-->
             <footer id="contact" class="footer action-lage bg-black p-top-80">
                 <!--<div class="action-lage"></div>-->
                 <div class="container">

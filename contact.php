@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "contact";
+$username = "id4892422_hans";
+$password = "turismo01071998";
+$dbname = "id4892422_contact";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,7 +15,7 @@ $email=$_POST['email'];
 $subject=$_POST['subject'];
 $message=$_POST['message'];
 
-$sql = "INSERT INTO contact (Nama, Email, Subject, Message)
+$sql = "INSERT INTO contact (Name, Email, Subject, Message)
 VALUES ('".$name."', '".$email."', '".$subject."','".$message."')";
 
 if ($conn->query($sql) === TRUE) {
@@ -26,8 +26,6 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?> 
-
-
 <?php
 $name=$_POST['name'];
 $email=$_POST['email'];
@@ -47,6 +45,6 @@ $headers .= 'Cc: ' .$email. "\r\n"; //untuk cc lebih dari satu tinggal kasih kom
 @mail($to,$subject,$message,$headers);
 if(@mail)
 {
-echo "Email sent successfully !!";	
+    echo "Email sent successfully !!";	
 }
 ?>
