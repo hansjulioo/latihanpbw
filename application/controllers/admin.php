@@ -62,4 +62,12 @@ class Admin extends CI_Controller{
 		$this->m_admin->input_data($data,'contact');
 		redirect('welcome');
 	}
+
+  public function download()
+	{
+		$data = $this->load->view('data');
+		header("Content-Type: application/ms-excel");
+		header("Content-Disposition: attachment; filename=contact.xls");
+		echo $data;
+	}
 }

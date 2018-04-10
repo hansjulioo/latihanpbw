@@ -29,5 +29,13 @@
         </tr>
         <?php } ?>
     </table>
+    <form action="<?php echo site_url("welcome/download")?>">
+		<button type="submit">Download Laporan</button>
+	</form>
+
+  <form action="<?php echo site_url("chart/index")?>">
+  <button type="submit">Lihat Statistik Pengunjung</button>
+  </form>
+
 </body>
 </html>

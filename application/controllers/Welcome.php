@@ -25,4 +25,11 @@ class Welcome extends CI_Controller {
 	function login(){
 		$this->load->view('v_login');
 	}
+	public function download()
+	{
+		$data = $this->load->view('data');
+		header("Content-Type: application/ms-excel");
+		header("Content-Disposition: attachment; filename=contact.xls");
+		echo $data;
+	}
 }
